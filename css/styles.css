@@ -109,6 +109,19 @@ nav.menu {
     letter-spacing: 0.32px;
 }
 
+.active::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #4d5ae5;
+    position: relative;
+    top: 14px;
+
+
+}
+
 .navigation-contact li {
     display: inline-block;
 }
@@ -134,8 +147,13 @@ nav.menu {
 
 
 /* Hovered links */
-.navigation :hover, :active {
-    color: #4D5AE5;
+
+
+.menu-hover {
+    background-color: #4D5AE5;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
 }
 
 
@@ -189,14 +207,57 @@ h1.banner-text {
     padding: 16px 32px;
     font-size: 16px;
     border-radius: 6px;
-    cursor: pointer;
 }
+
 
 .order-button:hover {
     background: #404BBF;
     border-color: #404BBF;
 }
 
+.modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2E2F4266;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-modal {
+    border-radius: 4px;
+    background: #FCFCFC;
+    width: 408px;
+    height: 584px;
+    flex-shrink: 0;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+
+.data-modal-open {
+    cursor: pointer;
+}
+
+.data-modal-close {
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    margin: 24px;
+    color: #2E2F42;
+    cursor: pointer;
+    background-color: #E7E9FC;
+    border-color: #0000001A;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+}
+
+.is-hidden {
+    visibility: hidden;
+}
 
 .section-one, .section-two, .section-three, .customers, footer  {
     margin-top: 120px;
@@ -356,10 +417,9 @@ ul.row-one, .row-two, .row-three {
     padding: 0;
     box-sizing: border-box;
     display: inline-flex;
-    
 }
 
-li.portfolio-image {
+.portfolio-card {
     margin: 40px 8px;
     padding-bottom: 0;
     flex-shrink: 0;
@@ -372,6 +432,34 @@ li.portfolio-image {
     background: #FFF;
     gap: 32px;
     flex-shrink: 0;
+    overflow: hidden;
+}
+
+.portfolio-image:hover .portfolio-image-caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.portfolio-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-image-caption {
+    position: absolute;
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.25s cubic-bezier(0.5, 0, 0.2, 1);
+}
+
+.portfolio-image-caption p {
+    padding: 40px 32px;
 }
 
 
@@ -416,6 +504,12 @@ li.portfolio-image {
     line-height: 24px;
     /* 150% */
     letter-spacing: 0.32px;
+}
+
+.card-title:hover {
+    border: 1px solid var(--CLOUD, #F4F4FD);
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 

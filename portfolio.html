@@ -17,21 +17,28 @@
 <!-- Header Navigation -->
 <header>
     <nav class="menu">
-    <!-- Logo -->
-    <div class="webstudio">
-        <a href="/index.html" class="header-link"><span class="logo">WEB</span>STUDIO</a>
-    </div>
-    <ul class="navigation">
-        <li class="item"><a href="/">Studio</a></li>
-        <li class="item"><a href="portfolio.html">Portfolio</a></li>
-        <li class="item"><a href="/">Contacts</a></li>
+        <!-- Logo -->
+        <div class="webstudio">
+            <a href="index.html" class="header-link"><span class="logo">WEB</span>STUDIO</a>
+        </div>
+        <ul class="navigation">
+            <li class="item"><a href="index.html" class="menu-studio">Studio</a>
+            </li>
+            <li class="item"><a href="portfolio.html" class="menu-portfolio active">Portfolio</a>
+            </li>
+            <li class="item"><a href="/" class="menu-contacts">Contacts</a>
+            </li>
         </ul>
-        </nav>
-     <!-- Contact Info -->
-        <ul class="navigation-contact">
-        <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="item"><a href="tel:110001111111">+11 (000) 111-11-11</a></li>
-        </ul>
+    </nav>
+    <!-- Contact Info -->
+    <ul class="navigation-contact">
+        <li class="nav-contact"><a class="nav-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <div class="menu hover"></div>
+        </li>
+        <li class="nav-contact"><a class="nav-phone" href="tel:110001111111">+11 (000) 111-11-11</a>
+            <div class="menu hover"></div>
+        </li>
+    </ul>
 </header>
 
 <main>
@@ -46,46 +53,93 @@
  
 <section>
     <ul class="row-one">
-        <li class="portfolio-image">
+        <li class="portfolio-card">
+        <div class="portfolio-image">
             <img src="./images/portfolio/Banking App Interface Concept.png" alt="Banking App Interface Concept" width="360" height="300">
-            <span class="card-title"><h3>Banking App Interface Concept</h3>
+        <div class="portfolio-image-caption">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non esse quae facilis minima quam qui autem laborum nisi ratione accusamus praesentium optio a dignissimos nemo, maxime exercitationem! Maxime, animi. Sunt!</p>
+        </div>
+        </div>
+        <span class="card-title">
+            <h3>Banking App Interface Concept</h3>
             <p class="card-subtitle">App</p>
-            </span>
+        </span>
         </li>
-        <li class="portfolio-image">
-            <img src="./images/portfolio/Cashless Payment.png" alt="Cashless Payment" width="360" height="300">
-            <span class="card-title"><h3>Cashless Payment</h3>
+        <li class="portfolio-card">
+       <div class="portfolio-image">
+            <img src="./images/portfolio/Cashless Payment.png" alt="Cashless Payment" width="360"
+                height="300">
+            <div class="portfolio-image-caption">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non esse quae facilis minima quam qui autem laborum
+                    nisi ratione accusamus praesentium optio a dignissimos nemo, maxime exercitationem! Maxime, animi. Sunt!</p>
+            </div>
+        </div>
+        <span class="card-title">
+            <h3>Cashless Payment</h3>
             <p class="card-subtitle">Marketing</p>
-            </span>
+        </span> 
         </li>
-        <li class="portfolio-image">
-            <img src="./images/portfolio/Meditation App.png" alt="Meditation App" width="360" height="300">
-            <span class="card-title"><h3>Meditation App</h3>
-            <p class="card-subtitle">App</p>
-            </span>
-        </li>
+        <li class="portfolio-card">
+        <div class="portfolio-image">
+        <img src="./images/portfolio/Meditation App.png" alt="Meditation App" width="360" height="300">
+        <div class="portfolio-image-caption">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non esse quae facilis minima quam qui autem
+                laborum
+                nisi ratione accusamus praesentium optio a dignissimos nemo, maxime exercitationem! Maxime, animi. Sunt!
+            </p>
+        </div>
+    </div>
+    <span class="card-title">
+        <h3>Meditation App</h3>
+        <p class="card-subtitle">App</p>
+    </span>
+</li>
+        
     </ul>
 </section>
 
 <section>
     <ul class="row-two">
-        <li class="portfolio-image">
-            <img src="./images/portfolio/Taxi Service.png" alt="Taxi Service" width="360"
-                height="300">
-            <span class="card-title">
-                <h3>Taxi Service</h3>
-                <p class="card-subtitle">Marketing</p>
-            </span>
-        </li>
-        <li class="portfolio-image">
+    <li class="portfolio-card">
+        <div class="portfolio-image">
+            <img src="./images/portfolio/Taxi Service.png" alt="Taxi Service" width="360" height="300">
+            <div class="portfolio-image-caption">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non esse quae facilis minima quam qui autem
+                    laborum
+                    nisi ratione accusamus praesentium optio a dignissimos nemo, maxime exercitationem! Maxime, animi. Sunt!
+                </p>
+            </div>
+        </div>
+        <span class="card-title">
+            <h3>Taxi Service</h3>
+            <p class="card-subtitle">Marketing</p>
+        </span>
+    </li>
+        <li class="portfolio-card">
+        <div class="portfolio-image">
             <img src="./images/portfolio/Screen Illustrations.png" alt="Screen Illustrations" width="360" height="300">
+        <div class="portfolio-image-caption">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non esse quae facilis minima quam qui autem
+                laborum
+                nisi ratione accusamus praesentium optio a dignissimos nemo, maxime exercitationem! Maxime, animi. Sunt!
+            </p>
+        </div>
+        </div>
             <span class="card-title">
                 <h3>Screen Illustrations</h3>
                 <p class="card-subtitle">Design</p>
             </span>
         </li>
-        <li class="portfolio-image">
+        <li class="portfolio-card">
+        <div class="portfolio-image">
             <img src="./images/portfolio/Online Courses.png" alt="Online Courses" width="360" height="300">
+                <div class="portfolio-image-caption">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non esse quae facilis minima quam qui autem
+                        laborum
+                        nisi ratione accusamus praesentium optio a dignissimos nemo, maxime exercitationem! Maxime, animi. Sunt!
+                    </p>
+                </div>
+                </div>
             <span class="card-title">
                 <h3>Online Courses</h3>
                 <p class="card-subtitle">Marketing</p>
@@ -94,22 +148,46 @@
     </ul>
 </section>
 <ul class="row-three">
-    <li class="portfolio-image">
+        <li class="portfolio-card">
+        <div class="portfolio-image">
         <img src="./images/portfolio/Instagram Stories Concept.png" alt="Instagram Stories Concept" width="360" height="300">
+        <div class="portfolio-image-caption">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non esse quae facilis minima quam qui autem
+                    laborum
+                    nisi ratione accusamus praesentium optio a dignissimos nemo, maxime exercitationem! Maxime, animi. Sunt!
+                </p>
+            </div>
+            </div>
         <span class="card-title">
             <h3>Instagram Stories Concept</h3>
             <p class="card-subtitle">Design</p>
         </span>
     </li>
-    <li class="portfolio-image">
+        <li class="portfolio-card">
+        <div class="portfolio-image">
         <img src="./images/portfolio/Organic Food.png" alt="Organic Food" width="360" height="300">
+        <div class="portfolio-image-caption">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non esse quae facilis minima quam qui autem
+                laborum
+                nisi ratione accusamus praesentium optio a dignissimos nemo, maxime exercitationem! Maxime, animi. Sunt!
+            </p>
+        </div>
+        </div>
         <span class="card-title">
             <h3>Organic Food</h3>
             <p class="card-subtitle">Web Site</p>
         </span>
     </li>
-    <li class="portfolio-image">
+        <li class="portfolio-card">
+    <div class="portfolio-image">
         <img src="./images/portfolio/Fresh Coffee.png" alt="Fresh Coffee" width="360" height="300">
+        <div class="portfolio-image-caption">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non esse quae facilis minima quam qui autem
+                laborum
+                nisi ratione accusamus praesentium optio a dignissimos nemo, maxime exercitationem! Maxime, animi. Sunt!
+            </p>
+        </div>
+        </div>
         <span class="card-title">
             <h3>Fresh Coffee</h3>
             <p class="card-subtitle">Web Site</p>

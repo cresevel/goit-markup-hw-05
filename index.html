@@ -22,24 +22,37 @@
     <a href="index.html" class="header-link"><span class="logo">WEB</span>STUDIO</a>
     </div>
     <ul class="navigation">
-    <li class="item"><a class="menu-studio" href="/">Studio</a></li>
-    <li class="item"><a class="menu-portfolio" href="portfolio.html">Portfolio</a></li>
-    <li class="item"><a class="menu-contacts" href="/">Contacts</a></li>
+    <li class="item"><a href="index.html" class="menu-studio active">Studio</a>
+    </li>
+    <li class="item"><a href="portfolio.html" class="menu-portfolio">Portfolio</a>
+    </li>
+    <li class="item"><a href="/" class="menu-contacts">Contacts</a>
+    </li>
     </ul>
     </nav>
     <!-- Contact Info -->
     <ul class="navigation-contact">
-    <li class="nav-contact"><a class="nav-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-    <li class="nav-contact"><a class="nav-phone" href="tel:110001111111">+11 (000) 111-11-11</a></li>
+    <li class="nav-contact"><a class="nav-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <div class="menu hover"></div>
+    </li>
+    <li class="nav-contact"><a class="nav-phone" href="tel:110001111111">+11 (000) 111-11-11</a>
+        <div class="menu hover"></div>
+    </li>
     </ul>
-    </header>
+</header>
 
 <main class="container-main">
 <!--Main Banner-->
 <section class="home-banner">
     <div class="banner-overlay">
     <h1 class="banner-text">Effective Solutions<br/>for Your Business</span></h1>
-    <button class="order-button" type="button">Order Service</button>
+<!-- Order Service Modal -->
+    <button type="button" class="order-button data-modal-open">Order Service</button>
+    </div>
+    <div class="modal">
+        <div class="data-modal">
+            <button type="button" class="data-modal-close">&times;</button>
+        </div>
     </div>
 </section>
 <!--Section 1-->
@@ -230,5 +243,6 @@
         </ul>
     </div>
 </footer>
+<script src="./js/modal.js"></script>
 </body>
 </html>
